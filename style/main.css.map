@@ -1,0 +1,22 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "main.scss",
+        "modules/_utility.scss",
+        "modules/_colors.scss",
+        "modules/_all.scss",
+        "partials/_buttons.scss",
+        "partials/_figures.scss",
+        "partials/_grid.scss",
+        "partials/_reset.scss",
+        "partials/_typography.scss",
+        "partials/_base.scss",
+        "layout/_small_navbar.scss",
+        "layout/_big_navbar.scss",
+        "layout/_main-header.scss",
+        "layout/_footer.scss"
+    ],
+    "names": [],
+    "file": "main.css"
+}
