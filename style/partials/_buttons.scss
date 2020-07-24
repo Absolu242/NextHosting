@@ -1,0 +1,30 @@
+.btn {
+    background-color: $green-color;
+    padding: 1.5rem 3rem;
+    border: none;
+    border-radius: 2px;
+    font-size: 1rem;
+    font-weight: 600;
+    a {
+        color: #fff;
+        text-decoration: none;
+    }
+}
+
+.packages-btn {
+    background: none;
+    padding: 1.2rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    border-top: 1px solid $most-text;
+    border-bottom: 1px solid $most-text;
+    border-right: 3px solid $most-text;
+    border-left: 3px solid $most-text;
+    border-radius: 2px;
+    font-size: 1rem;
+    font-weight: 600;
+    a {
+        color: $most-text;
+        text-decoration: none;
+    }
+}

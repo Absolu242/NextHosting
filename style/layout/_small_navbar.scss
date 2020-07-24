@@ -1,0 +1,68 @@
+@import url(../modules/_utility.scss);
+.navbar{
+    width:100%;
+}
+.navbar-small{
+    background-color: $small-nav-color;
+    @include centerAll
+}
+.small{
+    
+    &-content{
+        width:70%;
+        padding: .1rem 0;
+        @include spaceAll;
+        color: $white-color-2;
+    }
+
+    &-left{
+        @include spaceAll;
+
+        span{
+            align-items: center;
+            padding-right: 3rem;
+            font-size:1.3rem;
+
+            i{
+                padding-right:.5rem ;
+            }
+        }
+    }
+
+    &-right{
+        span{
+            padding: .8rem 0;
+            align-items: center;
+            font-size:1.2rem;
+
+            &.login{
+
+                i{
+                    padding-right:.5rem ;
+                }
+                padding-right: 1rem;
+                border-right: 1px solid $white-color-2;
+            }
+
+            &.language{
+                select{
+                    padding: .8rem 0;
+                    border: none;
+                    background-color: $small-nav-color;
+                    border-right: 1px solid $white-color-2;
+                    color: $white-color-2;
+                    outline: none;
+                }
+            }
+            a{
+                
+                padding: 0.8rem  1rem 0.8rem 0.8rem;
+                text-decoration: none;
+                border-right: 1px solid $white-color-2;
+                color: $white-color-2;
+            }
+        }
+    }
+}
+
+

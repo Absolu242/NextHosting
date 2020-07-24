@@ -1,0 +1,62 @@
+@import url(../modules/_utility.scss);
+.navbar{
+    width:100%;
+}
+.navbar-big{
+    background-color:#fff;
+    @include centerAll
+}
+.big{
+    
+    &-content{
+        padding: 1.5rem 0;
+        width:70%;
+        @include spaceAll;
+        color: $white-color-2;
+    }
+
+    &-left{
+        img{
+            width:8rem;
+            height: 3rem;
+        }
+    }
+
+    &-right{
+        font-size: 1.2rem;
+        
+        .nav{
+            &-list{
+                @include spaceAll;
+                list-style: none;
+            }
+
+            &-item{
+                padding-left:3rem;
+                a{
+                    text-decoration: none;
+                    color:$green-color;
+                    font-weight: 600;
+                }
+                button{
+                    padding:1rem 1.5rem;
+                    border: 1px solid $white-color-2;
+                    background: none;
+                    border-radius: 3px;
+                }
+                span{
+                    i{
+                       color:$blue-color;
+                        padding-right:.5rem ;
+                    }
+                    font-size: 1rem;
+                    font-weight: bold;
+                }
+               
+            }
+
+        }
+    }
+}
+
+

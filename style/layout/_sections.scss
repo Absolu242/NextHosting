@@ -1,0 +1,407 @@
+@import url(../modules/_utility.scss);
+
+.actions{
+    @include centerAll;
+    width: 100%;
+   padding: 10rem 0;
+    background-color: $white-color-2;
+    &-content{
+        @include spaceAll;
+        width: 70%;
+
+        .content-action{
+            
+            text-align: center;
+            h3{
+                padding: .5rem;
+            }
+            p{
+                width:30rem;
+            }
+            .action2{
+               img{
+                position: relative;
+                top:-2rem;
+               }
+            }
+            
+        }
+    
+        .dot{
+            position: relative;
+            top:-4rem;
+        }
+    }
+
+}
+
+.panel{
+    &-info{
+        @include centerAll;
+        &-content{
+            width: 70%;
+            @include spaceAll;
+        }
+
+        &-image{
+            img{
+                width: 70rem;
+                height: 45rem;
+            }
+        }
+
+        &-text{
+            
+            p{
+                line-height: 2.5rem;
+                padding: 2rem 0;
+            }
+        }
+        
+        &-btn{
+            padding: 1rem 2rem ;
+            font-size: 1.2rem;
+            font-weight: 600;
+            border-radius: 4px;
+            background: none;
+            border-bottom: 1px solid $green-color;
+            border-left: 1px solid $green-color;
+            border-top: 3px solid $green-color;
+            border-right: 3px solid $green-color;
+
+            a{
+                text-decoration: none;
+                color: #000;
+
+                span{
+                    ion-icon{
+                        font-size: 1.5rem;
+                        color: $green-color;
+                        position: relative;
+                        top: .2rem;
+                        left: .5rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.packages{
+    @include centerAll;
+    background-color: $white-color-2;
+    
+
+    &-content{
+        @include centerAll;
+        width: 80%;
+        padding: 8rem 0;
+    }
+
+    &-title{
+        text-align: center;
+        padding-bottom: 5rem ;
+        p{
+            width: 50rem;
+            color: $most-text;
+        }
+    }
+
+    &-body{
+        @include spaceAll;
+        justify-content: space-between;
+       
+        width: 70%;
+
+        .package{
+            background-color: #fff;
+            &-top{
+                text-align: center;
+                padding: 3rem;
+                img{
+                    width: 5rem;
+                }
+                p{
+                    color: $most-text;
+                }
+            }
+            &-price{
+                background-color: #f6fafc;
+                text-align: center;
+                padding: 2rem;
+                color:$price-package;
+                line-height: 2.5rem;
+                border-top: 1px solid $facebook-color;
+                border-bottom: 1px solid $facebook-color;
+                
+                p{
+                    font-weight: lighter;
+                    span{
+                        font-size: 3.5rem;
+                    }
+                }
+
+                .btn{
+                    padding: 1rem 2rem;
+                }
+            }
+
+            &-list{
+                @include centerAll;
+                padding: 2rem;
+                ul{
+                    list-style: none;
+                }
+            }
+            &-item{
+                @include spaceAll;
+                justify-content: start;
+                font-weight: 600;
+                color:$most-text;
+                padding: 1rem 0;
+                p{
+                    padding: 0 1.5rem;
+                }
+
+                &:nth-child(1){
+                    p{
+                        text-decoration: dotted;
+                    }
+                }
+            }
+        }
+    }
+    &-btn{
+        position: relative;
+        top: 4rem;
+    }
+}
+
+.skills{
+    @include centerAll;
+    padding: 3rem 0;
+
+    &-title{
+        text-align: center;
+        padding: 1rem 0;
+        p{
+            width:40rem
+        }
+    }
+    &-nav{
+        @include spaceAll;
+
+        label{
+            padding: 0 2rem;
+            cursor: pointer;
+
+            &:hover{
+                color:$blue-color;
+            }
+        }
+    }
+
+    &-content{
+        @include centerAll;
+        width:70%;
+        .slides{
+            padding: 3rem 0;
+            .slide{
+                width:100%;
+                &-content{
+                    width:100%; 
+                }
+
+                &-top{
+                width:100%;
+                @include spaceAll;   
+                padding: 3rem 0;
+                
+                }
+
+                &-bottom{
+                    width:100%;
+                    @include spaceAll;
+                    padding: 3rem 0;
+                    }
+                
+                &-item{
+                    text-align: center;
+                }
+            }
+        }   
+    }  
+}
+
+.inter{
+    height: 350px;
+    &-content{
+        @include centerAll;
+        
+        .line-nice{
+            @include centerAll;
+            position: relative;
+            top: -26rem;
+            span{
+                width: 5px;
+                height: 45px;
+
+                &.green{
+                    background-color: $green-color;
+                }
+
+                &.blue{
+                    background-color: $blue-color;
+                }
+
+            }
+        }
+    }
+
+    &-text{
+        width: 100%;
+        display:grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: 350px;
+        color: #fff;
+
+        .inter-item{
+            width: 100%;
+            @include spaceAll;
+
+            p{
+                width: 30rem;
+            }
+
+            .btn{
+                margin: 2rem 0;
+                color: white;
+            }
+        }
+
+        .item-left{
+           position: relative;
+            background-color: $black-color-1;
+            .inter-item-content{
+                position: absolute;
+               left: 40%;
+            }
+        }
+        .item-right{
+            background-color: $black-color-2;
+            .inter-item-content{
+                position: absolute;
+               padding: 0 8rem;
+            }
+           
+        }
+    }
+}
+
+.testimonials{
+    @include centerAll;
+    &-content{
+       width: 50%;
+    }
+
+    &-title{
+        text-align: center;
+    }
+
+    &-body{
+        .quote-2{
+            float: right;
+        }
+    }
+
+    &-slides{
+        text-align: center;
+    }
+
+    &-slide{
+        text-align: center;
+        p{
+            padding:1rem 10rem;
+        }
+
+       
+    }
+}
+.contact{
+    @include centerAll;
+    width: 100%;
+    background-color: $blue-color;
+    padding: 5rem 0;
+    &-content{
+        @include centerAll;
+        width:50%;
+    }
+
+    &-top{
+        @include spaceAll;
+        width: 100%;
+        .content-item{
+            text-align: center;
+
+            h3{
+                color: #fff;
+            }
+        }
+    }
+
+    &-bottom{
+        width: 100%;
+        padding: 3rem 0;
+        .form{
+            @include spaceAll;
+            position: relative;
+            .input{
+                padding-left:  2rem;
+               position: relative;
+                    input {
+                       
+                        border:none;
+                        margin: 8px 0;
+                        outline: none;
+                        padding: 8px;
+                        transition: 0.3s;
+                        padding: 1.5rem 0;
+                        padding-left: 4.5rem;
+                        background:none;
+                        color: #fff;
+                        border-bottom: 1px solid #fff;
+    
+                        &:focus {
+                            border-color: #fff;
+                            box-shadow: 0 0 8px 0 #fff;
+                        }
+
+                        &::placeholder{
+                            color: $white-color-2;
+                        }
+                    }
+    
+                    input:focus + img{
+                        color: $green-color !important;
+                    }
+    
+                    ion-icon,i {
+                        position: absolute;
+                        left: 1.8rem;
+                        top: 1.1rem;
+                        padding: 9px 8px;
+                        font-size: 2rem;
+                        transition: 0.3s;
+                        width:4rem;
+                        color: #fff;
+                    }
+                
+            }
+
+            .btn{
+                padding: 1.2rem 1.5rem;
+                color: #fff;
+            }
+        }
+    }
+}
