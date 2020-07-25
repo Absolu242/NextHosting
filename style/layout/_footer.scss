@@ -1,0 +1,134 @@
+@import url(../modules/_utility.scss);
+
+.footer{
+    width: 100%;
+    background-color: $footer-color;
+    color:#fff;
+    padding: 5rem 0;
+    @include centerAll;
+
+    &-content{
+       width: 100%;
+       @include centerAll;
+    }
+
+    &-top{
+        @include spaceAll;
+        padding: 3rem 0;
+        width: 70%;
+
+    }
+
+    &-bottom{
+        @include centerAll;
+        border-top: 1px solid $price-package;
+        width: 100%;
+        padding-top: 3rem ;
+        &-content{
+            @include spaceAll;
+            width: 70%;
+            input{
+                padding: 1.2rem 2.8rem;
+                background-color: #1e2734;
+                border:none;
+                font-size: 1rem;
+
+                &::placeholder{
+                    color: $most-text;
+                }
+            }
+
+            .chat-btn{
+                position: relative;
+                left: -.3rem;
+            }
+        }
+    }
+
+    &-item{
+
+        p{
+            width: 30rem;
+            padding: .5rem 0;
+        }
+
+        .ct-item{
+            i{
+                position: relative;
+                top: 1rem;
+                font-size: 2rem;
+                padding-right:1rem;
+            }
+            display: flex;
+
+            a{
+                padding: 1rem;
+                background-color: #fff;
+                border-radius: 50%;
+                color:#fff;
+                margin-right: 0.5rem;
+
+                i{
+                    position: relative;
+                    top: -0.1rem;
+                    left: .3rem;
+                    font-size: 2rem;
+                }
+
+                &:nth-child(1){
+                    background-color: $facebook-color;
+                }
+                &:nth-child(2){
+                    background-color: $twitter-color;
+                }
+                &:nth-child(3){
+                    background-color: $linkedin-color;
+                }
+                &:nth-child(4){
+                    background-color: $gmail-color;
+                }
+            }
+        }
+
+
+        .chat-btn{
+            padding: 1rem;
+            font-weight: 600;
+            i{
+                color: #fff;
+            }
+
+            background-color: $blue-color;
+            border: none;
+            color: #fff;
+        }
+
+        .posts{
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            grid-template-rows: repeat(2,1fr);
+            grid-gap: .5rem;
+        }
+    }
+    .sitemap{
+        display: flex;
+       
+        &-list{
+            list-style: none;
+           padding-right: 5rem;
+           margin: 2rem 0;
+        }
+        &-item{
+            font-size: 1.2rem;
+            color: #fff;
+            padding: .6rem 0;
+            
+            a{
+                color: #fff;
+            }
+
+           
+        }
+    }
+
+}

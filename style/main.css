@@ -3,6 +3,7 @@
 @import url(../modules/_utility.scss);
 @import url(../modules/_utility.scss);
 @import url(../modules/_utility.scss);
+@import url(../modules/_utility.scss);
 h2 {
   font-size: 2rem;
   padding: 1rem 0;
@@ -1210,6 +1211,210 @@ button {
 
 .contact-bottom .form .btn {
   padding: 1.2rem 1.5rem;
+  color: #fff;
+}
+
+.footer {
+  width: 100%;
+  background-color: #111720;
+  color: #fff;
+  padding: 5rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer-content {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 3rem 0;
+  width: 70%;
+}
+
+.footer-bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-top: 1px solid #3c5169;
+  width: 100%;
+  padding-top: 3rem;
+}
+
+.footer-bottom-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 70%;
+}
+
+.footer-bottom-content input {
+  padding: 1.2rem 2.8rem;
+  background-color: #1e2734;
+  border: none;
+  font-size: 1rem;
+}
+
+.footer-bottom-content input::-webkit-input-placeholder {
+  color: #89939c;
+}
+
+.footer-bottom-content input:-ms-input-placeholder {
+  color: #89939c;
+}
+
+.footer-bottom-content input::-ms-input-placeholder {
+  color: #89939c;
+}
+
+.footer-bottom-content input::placeholder {
+  color: #89939c;
+}
+
+.footer-bottom-content .chat-btn {
+  position: relative;
+  left: -.3rem;
+}
+
+.footer-item p {
+  width: 30rem;
+  padding: .5rem 0;
+}
+
+.footer-item .ct-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer-item .ct-item i {
+  position: relative;
+  top: 1rem;
+  font-size: 2rem;
+  padding-right: 1rem;
+}
+
+.footer-item .ct-item a {
+  padding: 1rem;
+  background-color: #fff;
+  border-radius: 50%;
+  color: #fff;
+  margin-right: 0.5rem;
+}
+
+.footer-item .ct-item a i {
+  position: relative;
+  top: -0.1rem;
+  left: .3rem;
+  font-size: 2rem;
+}
+
+.footer-item .ct-item a:nth-child(1) {
+  background-color: #3b5998;
+}
+
+.footer-item .ct-item a:nth-child(2) {
+  background-color: #4fc0e9;
+}
+
+.footer-item .ct-item a:nth-child(3) {
+  background-color: #3272bd;
+}
+
+.footer-item .ct-item a:nth-child(4) {
+  background-color: #d13f2d;
+}
+
+.footer-item .chat-btn {
+  padding: 1rem;
+  font-weight: 600;
+  background-color: #176ae1;
+  border: none;
+  color: #fff;
+}
+
+.footer-item .chat-btn i {
+  color: #fff;
+}
+
+.footer-item .posts {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  -ms-grid-rows: (1fr)[2];
+      grid-template-rows: repeat(2, 1fr);
+  grid-gap: .5rem;
+}
+
+.footer .sitemap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer .sitemap-list {
+  list-style: none;
+  padding-right: 5rem;
+  margin: 2rem 0;
+}
+
+.footer .sitemap-item {
+  font-size: 1.2rem;
+  color: #fff;
+  padding: .6rem 0;
+}
+
+.footer .sitemap-item a {
   color: #fff;
 }
 
