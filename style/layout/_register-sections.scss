@@ -1,0 +1,199 @@
+@import '../modules/utility';
+
+.registration{
+    width: 100%;
+    &-banner{
+        @include centerAll;
+        background-color: $black-color-2;
+        padding: 4rem 0;
+
+        &-content{
+            text-align: center;
+            color: #fff;
+            line-height: 1.5rem;
+        }
+    }
+
+    &-body{
+        @include centerAll;
+        width: 100%;
+        padding: 5rem 0;
+        &-content{
+            @include centerAll;
+            width: 55rem;
+            background-color: $white-color-1;
+
+            @media (max-width:768px){
+                width:90%;
+             }
+            
+        }
+    }
+
+    &-form{
+        @include centerAll;
+        &-top{
+            text-align: center;
+            line-height: .8rem;
+            font-size: .8rem;
+            font-weight: 600;
+
+            span.lock{
+                img{
+                    width:7rem;
+                    position: relative;
+                    top: -3rem;
+                }
+            }
+            
+
+            span.special{
+                position: relative;
+               a{
+                   color: $green-color;
+                   text-decoration:underline dotted;
+               }
+             }
+           
+        }
+
+        form{
+            span.special{
+                position: relative;
+               a{
+                   color: $green-color;
+                   text-decoration:underline dotted;
+               }
+             }
+
+             padding-bottom: 1rem;
+        }
+    }
+
+    &-input{
+      
+        margin: 1.5rem 0;
+        .pairs{
+            margin: .8rem 2rem;
+            @include spaceAll; 
+            align-items: center;
+
+            .date{
+                position: relative;
+                left: 1rem;
+                input{
+                    padding:.8rem .4rem;
+                    margin-left: 0rem ;
+                }
+                label{
+                    font-size: .8rem;
+                }
+            }
+
+            select{
+                padding: .8rem 1rem;
+                padding-right: 10rem;
+                margin: 1rem ;
+                border: none;
+                font-size: 1rem;
+                 font-weight: 600;
+                background-color: white;
+                outline-color:$green-color;
+            }
+           
+            
+        }
+
+        .textarea{
+            @include centerAll;
+            textarea.desktop{
+               padding: 1rem 1.5rem ;
+               outline-color:$green-color;
+               font-weight: 600;
+               border: none;
+
+               @media (max-width:768px){
+                  display: none;
+               }
+            }
+
+            textarea.mobile{
+                display: none;
+                padding: 1rem 1.5rem ;
+                outline-color:$green-color;
+                font-weight: 600;
+                border: none;
+ 
+                @media (max-width:768px){
+                   display: block;
+                }
+             }
+        }
+
+        .button{
+            @include centerAll;
+            .btn{
+               padding: 1rem 6rem ;
+               outline-color:$green-color;
+               
+            }
+        }
+
+        input{
+            padding: .8rem 1rem;
+            padding-right: 3rem;
+            margin: 1rem ;
+            border: none;
+            &::placeholder{
+                font-size: 1rem;
+                font-weight: 600;
+            }
+            background-color: white;
+            outline-color:$green-color;
+        }
+
+        .btn{
+            padding: 1rem 9.8rem;
+            color: white;
+            margin: 2rem 0;
+           
+        }
+    }
+
+
+
+    &-bottom{
+        @include centerAll;
+        width: 100%;
+        background-color:$about-blue;
+        padding: 5rem 0;
+        &-content{
+            @include spaceAll;
+            width: 60%;
+            
+        }
+
+        &-item{
+            display: flex;
+            align-items: center;
+            color: #fff;
+            line-height: 1rem;
+
+            @media (max-width:768px){
+                padding: 2rem 0;
+             }
+
+            p{
+                font-weight: 400;
+            }
+
+            .chat{
+                margin-right: 2rem;
+
+                img{
+                    width: 4rem;
+                }
+            }
+        }
+    }
+}

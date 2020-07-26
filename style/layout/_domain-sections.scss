@@ -1,0 +1,122 @@
+@import '../modules/utility';
+
+.domain{
+    &-banner{
+        @include centerAll;
+        background-color: $black-color-2;
+        padding: 4rem 0;
+
+        &-content{
+            text-align: center;
+            color: #fff;
+            line-height: 1.5rem;
+        }
+    }
+
+    
+    &-search{
+        @include centerAll;
+        background-color: $blue-color;
+        padding: 5rem 0;
+
+        &-content{
+            text-align: center;
+            color: #fff;
+            line-height: 1.5rem;
+
+            h2{
+                padding: 2rem 0;
+            }
+            .form{
+                display: flex;
+                input{
+                    position: relative;
+                    padding: 1.2rem 1.5rem;
+                    padding-right: 15rem;
+                    left: .1rem;
+                    background-color: #fff;
+                    border:none;
+
+                    @media(max-width: 768px){
+                        padding-right: .1rem;
+                    }
+                }
+
+                select{
+                    padding: 1.3rem 1.5rem;
+                    background-color: #fff;
+                    text-transform: uppercase;
+                    font-weight: 600;
+                    font-size: 1rem;
+                    border:none
+                }
+
+                .btn{
+                    padding: 1.4rem 2rem;
+                    border-radius: 0;
+                    color: white;
+                }
+            }
+
+            .price{
+                
+                &-first{
+                    @include centerAll;
+                    padding: 1rem 0;
+                }
+
+                &-list{
+                list-style: none;
+                display: flex;
+                }
+                &-item{
+                    padding-right: 1rem;
+                }
+            }
+
+        }
+    }
+
+
+
+
+    &-addon{
+        width: 100%;
+        @include centerAll;
+        background-color: $background-blue;
+        padding: 8rem 0;
+        &-content{
+            width: 70%;
+            
+        }
+        &-top{
+            padding: 3rem 0;
+            text-align: center;
+            color: #fff;
+        }
+        &-body{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            grid-gap:3rem ;
+
+            @media(max-width: 768px){
+                grid-template-columns: 1fr;
+            }
+
+        }
+
+        &-item{
+            line-height: 3rem;
+
+            h3{
+                color: #fff;
+            }
+
+            p{
+                line-height: 2rem;
+                color: $most-text;
+               
+            }
+        }
+    }
+}

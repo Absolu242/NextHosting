@@ -9,11 +9,19 @@
 @import './partials/typography';
 @import './partials/base';
 
-@import './layout/header';
+
 @import './layout/small_navbar';
 @import './layout/big_navbar';
 @import './layout/hero';
-@import './layout/sections';
+@import './layout/index-sections';
+@import './layout/hosting-sections';
+@import './layout/domain-sections';
+@import './layout/about-sections';
+@import './layout/faq-sections';
+@import './layout/login-sections';
+@import './layout/register-sections';
+@import './layout/contact-sections';
+@import './layout/404';
 @import './layout/footer';
 
 *{

@@ -1,0 +1,96 @@
+@import '../modules/utility';
+
+.faq{
+    width: 100%;
+    &-banner{
+        @include centerAll;
+        background-color: $black-color-2;
+        padding: 4rem 0;
+
+        &-content{
+            text-align: center;
+            color: #fff;
+            line-height: 1.5rem;
+        }
+    }
+
+    &-search{
+        @include centerAll;
+        background-image: url(../../img/faq-image.png);
+        background-size: cover;
+        background-position: center;
+        padding: 5rem 0;
+
+        &-content{
+            text-align: center;
+            color: #fff;
+            line-height: 1.5rem;
+
+            h2{
+                padding: 2rem 0;
+            }
+            .form{
+                display: flex;
+                input{
+                    position: relative;
+                    padding: 1rem 1.5rem;
+                    padding-right: 15rem;
+                    left: .1rem;
+
+                    @media(max-width: 768px){
+                        padding-right: 3rem;
+                    }
+                }
+
+                .btn{
+                    padding: 1.4rem 2rem;
+                    border-radius: 0;
+                    color: white;
+                }
+            }
+        }
+    }
+
+    &-bottom{
+        @include centerAll;
+        width: 100%;
+        padding: 5rem 0;
+        &-content{
+            @include spaceAll;
+            width: 60%;
+            
+        }
+
+        &-item{
+            display: flex;
+            align-items: center;
+            color: #000;
+            line-height: 1rem;
+            
+            @media (max-width:768px){
+                padding: 2rem 0;
+                line-height: 1.5rem;
+            
+             }
+
+            p{
+                font-weight: 600;
+            }
+
+            h3{
+                color:$blue-color;
+            }
+
+            .phone{
+                border-radius: 50%;
+                background-color: $green-color;
+                padding: 1rem;
+                margin-right: 2rem;
+
+                img{
+                    width: 3rem;
+                }
+            }
+        }
+    }
+}

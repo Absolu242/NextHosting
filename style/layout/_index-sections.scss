@@ -9,6 +9,10 @@
         @include spaceAll;
         width: 70%;
 
+        @media(max-width: 786px){
+            width: 90%;
+        }
+
         .content-action{
             
             text-align: center;
@@ -38,15 +42,28 @@
 .panel{
     &-info{
         @include centerAll;
+        padding-bottom: 3rem;
         &-content{
             width: 70%;
             @include spaceAll;
+         
+
+            @media(max-width: 786px){
+                width: 90%;
+            }
         }
 
         &-image{
             img{
-                width: 70rem;
+                width: 60rem;
                 height: 45rem;
+            }
+
+            @media(max-width: 786px){
+               img{
+                width: 30rem;
+                height: 25rem;
+               }
             }
         }
 
@@ -58,32 +75,6 @@
             }
         }
         
-        &-btn{
-            padding: 1rem 2rem ;
-            font-size: 1.2rem;
-            font-weight: 600;
-            border-radius: 4px;
-            background: none;
-            border-bottom: 1px solid $green-color;
-            border-left: 1px solid $green-color;
-            border-top: 3px solid $green-color;
-            border-right: 3px solid $green-color;
-
-            a{
-                text-decoration: none;
-                color: #000;
-
-                span{
-                    ion-icon{
-                        font-size: 1.5rem;
-                        color: $green-color;
-                        position: relative;
-                        top: .2rem;
-                        left: .5rem;
-                    }
-                }
-            }
-        }
     }
 }
 
@@ -104,6 +95,10 @@
         p{
             width: 50rem;
             color: $most-text;
+
+            @media(max-width: 786px){
+                width:30rem;
+            }
         }
     }
 
@@ -111,10 +106,11 @@
         @include spaceAll;
         justify-content: space-between;
        
-        width: 70%;
+        width: 90%;
 
         .package{
             background-color: #fff;
+            margin: 1.5rem 0;
             &-top{
                 text-align: center;
                 padding: 3rem;
@@ -185,7 +181,11 @@
         text-align: center;
         padding: 1rem 0;
         p{
-            width:40rem
+            width:40rem;
+
+            @media(max-width: 768px){
+                width: 100%;
+            }
         }
     }
     &-nav{
@@ -208,6 +208,7 @@
             padding: 3rem 0;
             .slide{
                 width:100%;
+                
                 &-content{
                     width:100%; 
                 }
@@ -227,6 +228,7 @@
                 
                 &-item{
                     text-align: center;
+                    margin: 1.5rem 0;
                 }
             }
         }   
@@ -234,7 +236,7 @@
 }
 
 .inter{
-    height: 350px;
+   
     &-content{
         @include centerAll;
         
@@ -242,6 +244,12 @@
             @include centerAll;
             position: relative;
             top: -26rem;
+
+            @media(max-width: 786px){
+               transform: rotate(-90deg);
+                top: -44rem;
+
+            }
             span{
                 width: 5px;
                 height: 45px;
@@ -265,6 +273,12 @@
         grid-template-rows: 350px;
         color: #fff;
 
+        @media(max-width: 786px){
+            grid-template-columns: 1fr;
+            grid-template-rows:350px 350px;
+        }
+        
+
         .inter-item{
             width: 100%;
             @include spaceAll;
@@ -285,13 +299,21 @@
             .inter-item-content{
                 position: absolute;
                left: 40%;
+
+               @media(max-width: 786px){
+                left: 2rem;
+               }
             }
         }
         .item-right{
             background-color: $black-color-2;
             .inter-item-content{
-                position: absolute;
+              position: absolute;
                padding: 0 8rem;
+
+               @media(max-width: 786px){
+                padding: 0;
+               }
             }
            
         }
@@ -300,8 +322,14 @@
 
 .testimonials{
     @include centerAll;
+   
     &-content{
        width: 50%;
+       
+       @media(max-width: 768px){
+           width: 100%;
+           padding-bottom: 2rem;
+       }
     }
 
     &-title{
@@ -311,6 +339,15 @@
     &-body{
         .quote-2{
             float: right;
+        }
+
+         
+        @media(max-width: 768px){
+            .quote-2,.quote-1{
+               img{
+                width: 5rem;
+               }
+            }
         }
     }
 
@@ -322,12 +359,16 @@
         text-align: center;
         p{
             padding:1rem 10rem;
+
+            @media(max-width: 768px){
+                padding: 1rem 3rem;
+            }
         }
 
        
     }
 }
-.contact{
+.ct{
     @include centerAll;
     width: 100%;
     background-color: $blue-color;
@@ -335,6 +376,10 @@
     &-content{
         @include centerAll;
         width:50%;
+
+        @media(max-width: 768px){
+            width:90%;
+        }
     }
 
     &-top{
@@ -356,8 +401,14 @@
             @include spaceAll;
             position: relative;
             .input{
+                position: relative;
                 padding-left:  2rem;
-               position: relative;
+
+                @media(max-width: 768px){
+                    padding-left: 0;
+                }
+
+               
                     input {
                        
                         border:none;
@@ -379,6 +430,8 @@
                         &::placeholder{
                             color: $white-color-2;
                         }
+
+                        
                     }
     
                     input:focus + img{
@@ -394,6 +447,10 @@
                         transition: 0.3s;
                         width:4rem;
                         color: #fff;
+
+                        @media(max-width: 768px){
+                            left: 0rem;
+                        }
                     }
                 
             }

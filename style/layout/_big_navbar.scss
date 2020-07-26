@@ -2,16 +2,20 @@
 .navbar{
     width:100%;
 }
+
 .navbar-big{
     background-color:#fff;
     @include centerAll
 }
+
 .big{
     
     &-content{
         padding: 1.5rem 0;
         width:70%;
-        @include spaceAll;
+       display: flex;
+       justify-content: space-between;
+       align-items: center;
         color: $white-color-2;
     }
 
@@ -23,12 +27,22 @@
     }
 
     &-right{
-        font-size: 1.2rem;
-        
+        .menu{
+            display: none;
+            font-size: 2rem;
+            @media(max-width: 768px){
+                display: block;
+            }
+        }
+
         .nav{
             &-list{
                 @include spaceAll;
                 list-style: none;
+
+                @media(max-width: 768px){
+                    display: none;
+                }
             }
 
             &-item{

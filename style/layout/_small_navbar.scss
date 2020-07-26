@@ -13,10 +13,14 @@
         padding: .1rem 0;
         @include spaceAll;
         color: $white-color-2;
+        @media(max-width: 768px){
+            width: 90%;
+        }
     }
 
     &-left{
         @include spaceAll;
+        padding: 1rem 0;
 
         span{
             align-items: center;
@@ -41,7 +45,14 @@
                     padding-right:.5rem ;
                 }
                 padding-right: 1rem;
-                border-right: 1px solid $white-color-2;
+
+                a{
+                    padding: .3rem;
+                    text-decoration: none;
+                   
+                    color: $white-color-2;
+                }
+               
             }
 
             &.language{
@@ -49,7 +60,7 @@
                     padding: .8rem 0;
                     border: none;
                     background-color: $small-nav-color;
-                    border-right: 1px solid $white-color-2;
+                   
                     color: $white-color-2;
                     outline: none;
                 }
@@ -58,7 +69,7 @@
                 
                 padding: 0.8rem  1rem 0.8rem 0.8rem;
                 text-decoration: none;
-                border-right: 1px solid $white-color-2;
+               
                 color: $white-color-2;
             }
         }

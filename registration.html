@@ -6,6 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <meta name="description" content="World Number One Web Hosting Company " />
     <meta name="keywords" content="Hosting , Web , domain ,server web site" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+
+    <script type="module" src="https://unpkg.com/ionicons@5.1.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule="" src="https://unpkg.com/ionicons@5.1.2/dist/ionicons/ionicons.js"></script>
+<link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style/main.css">
     <title>Registration page</title>
   </head>
   <body>
@@ -21,37 +28,42 @@
                 <div class="registration-body-content">
                     <div class="registration-form">
                         <div class="registration-form-top">
-                            <span><img src="./img/lock.png" alt=""></span>
-                            <span><h2>Registration Form</h2> <br> <p>Already Registered ? <span class="special"><a href="#">Log In</a></span></p></span>
+                            <span class="lock"><img src="./img/lock.png" alt=""></span>
+                            <span><h2>Registration Form</h2> <br> <p>Already Registered ? <span class="special"><a href="./login.html">Log In</a></span></p></span>
                         </div>
                         <form action="">
                             <div class="registration-input">
                                 <div class="pairs">
-                                    <input type="text" name="" placeholder="YOUR NAME*" id="">
-                                    <input type="email" name="" placeholder="EMAIL ADDRESS*" id="">
+                                    <input type="text" name="" placeholder="YOUR NAME*" >
+                                    <input type="email" name="" placeholder="EMAIL ADDRESS*" >
                                 </div>
                                 <div class="pairs">
-                                    <input type="password" name="" placeholder="PASSWORD*" id="">
-                                    <input type="password" name="" placeholder="CONFIRM PASSWORD*" id="">
+                                    <input type="password" name="" placeholder="PASSWORD*" >
+                                    <input type="password" name="" placeholder="CONFIRM PASSWORD*" >
                                 </div>
                                 <div class="pairs">
-                                    <span><label for="date">DATE OF BIRTH*</label>
-                                    <input type="date" name="" id=""></span>
+                                    <span class="date"><label for="date">DATE OF BIRTH*</label>
+                                    <input type="date" name="" ></span>
 
-                                    <span><label for="radio">GENDER*</label> <input type="radio" name="" placeholder="MALE" id=""> <input type="radio" name="" placeholder="FEMALE" id=""></span>
+                                    <span><label for="radio">GENDER*</label> <input type="radio" name="" placeholder="MALE" required > <input type="radio" name="" placeholder="FEMALE" ></span>
                                 </div>
                                 <div class="pairs">
-                                    <input type="text" name="" placeholder="CITY*" id="">
-                                    <select name="country" id="">
+                                    <input type="text" name="" placeholder="CITY*" >
+                                    <select name="country" >
                                         <option value="default">COUNTRY*</option>
                                         <option value="United Kingdom">United Kingdom</option>
                                         <option value="United States">United States</option>
                                     </select>
                                 </div>
-                               <div class="pairs">
-                                <textarea name="" placeholder="ADDRESS*" id="" cols="30" rows="10"></textarea>
+                               <div class="pairs textarea">
+                                <textarea name="" placeholder="ADDRESS*"  cols="55" rows="3" class="desktop"></textarea>
+
+                                <textarea name="" placeholder="ADDRESS*"  cols="25" rows="3" class="mobile"></textarea>
+
                                </div>
+                               <div class="pairs button">
                                 <button type="submit" class="submit-btn btn">REGISTER NOW</button>
+                               </div>
                             </div>
                         </form>
                     </div>

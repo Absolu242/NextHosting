@@ -9,4 +9,12 @@
     display: flex;;
     justify-content: space-between;
     align-items: center;
+
+    @media(max-width: 768px){
+        justify-content: center;
+        flex-direction: column;
+        justify-content: center;
+        flex-wrap: wrap;
+        
+    }
 }

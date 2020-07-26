@@ -23,8 +23,52 @@
     border-radius: 2px;
     font-size: 1rem;
     font-weight: 600;
+    outline: none;
     a {
         color: $most-text;
+        text-decoration: none;
+    }
+}
+
+
+.panel-btn{
+    padding: 1rem 2rem ;
+    font-size: 1.2rem;
+    font-weight: 600;
+    border-radius: 4px;
+    background: none;
+    border-bottom: 1px solid $green-color;
+    border-left: 1px solid $green-color;
+    border-top: 3px solid $green-color;
+    border-right: 3px solid $green-color;
+    outline: none;
+
+    a{
+        text-decoration: none;
+        color: #000;
+
+        span{
+            ion-icon{
+                font-size: 1.5rem;
+                color: $green-color;
+                position: relative;
+                top: .2rem;
+                left: .5rem;
+            }
+        }
+    }
+}
+
+.simple-btn{
+    background-color: #fff;
+    padding: 1.2rem 3rem;
+    border: none;
+    border-radius: 2px;
+    font-size: 1rem;
+    font-weight: 600;
+    outline: none;
+    a {
+        color: #000;
         text-decoration: none;
     }
 }

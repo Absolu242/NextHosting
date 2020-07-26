@@ -17,6 +17,10 @@
         padding: 3rem 0;
         width: 70%;
 
+        @media(max-width:768px){
+            width:90%
+        }
+
     }
 
     &-bottom{
@@ -24,9 +28,18 @@
         border-top: 1px solid $price-package;
         width: 100%;
         padding-top: 3rem ;
+
+        @media(max-width:768px){
+           text-align: center;
+        }
+
         &-content{
-            @include spaceAll;
             width: 70%;
+            @include spaceAll;
+            @media(max-width:768px){
+                text-align: center;
+                width: 90%;
+             }
             input{
                 padding: 1.2rem 2.8rem;
                 background-color: #1e2734;
@@ -47,10 +60,20 @@
 
     &-item{
 
+        @media(max-width:768px){
+            margin-bottom: 2rem;
+        }
+
         p{
             width: 30rem;
             padding: .5rem 0;
+
+            @media(max-width:768px){
+                width: 100%;
+            }
         }
+
+       
 
         .ct-item{
             i{
@@ -110,6 +133,8 @@
             grid-gap: .5rem;
         }
     }
+
+   
     .sitemap{
         display: flex;
        
