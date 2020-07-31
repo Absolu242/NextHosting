@@ -2862,6 +2862,7 @@ button {
 }
 
 .about-team-item .name {
+  display: none;
   position: absolute;
   top: 8.5rem;
   color: #fff;
