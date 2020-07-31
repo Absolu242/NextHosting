@@ -45,6 +45,7 @@
                 background-color: #1e2734;
                 border:none;
                 font-size: 1rem;
+                outline-color: $blue-color;
 
                 &::placeholder{
                     color: $most-text;
@@ -131,6 +132,12 @@
             grid-template-columns: repeat(2,1fr);
             grid-template-rows: repeat(2,1fr);
             grid-gap: .5rem;
+            .post{
+                padding-left: .5rem;
+                img{
+                    width: 10rem;
+                }
+            }
         }
     }
 

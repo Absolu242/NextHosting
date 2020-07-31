@@ -3,7 +3,12 @@
 .hosting{
     &-banner{
         @include centerAll;
-        background-color: $black-color-2;
+        background-image: url("../../img/banner.png");
+        background-position: center;
+        background-position-x: 50%;
+        background-position-y: 50%;
+        background-size: cover;
+        background-repeat: no-repeat;
         padding: 4rem 0;
 
         &-content{
@@ -74,6 +79,95 @@
         }
     }
 
+    &-price{
+        &-list{
+            width:100%;
+            @include centerAll;
+            padding: 3rem 0;
+
+            .info-scroll{
+                display: none;
+               padding: 2rem 1rem;
+                p{
+                    font-size: 1.5rem;
+
+                    span{
+                        color: $green-color;
+                    }
+                }
+            }
+
+            @media(max-width:768px){
+                .info-scroll{
+                    display: block;
+                }
+                display: block;
+             }
+
+            
+        }
+
+        &-table{
+            width:100%;
+            @media(max-width:768px){
+               
+                 overflow: scroll;
+             }
+            table{
+                width:100%;
+                border-collapse: collapse;
+                font-size: 1.2rem;
+
+                tbody{
+                    tr{
+
+                        td{
+                            padding: 1rem 2.5rem ;
+                            &:first-child{
+                                padding-left: 0;
+                            }
+                            ion-icon{
+                                color:$green-color;
+                            }
+                            ion-icon.close{
+                                color:$most-text;
+                            }
+                           button{
+                               border: 1px solid $green-color;
+                               font-size: 1rem;
+                                &:hover{
+                                    background-color: $green-color;
+                                    color:#fff;
+                                    border: none;
+                                    border-radius: 2px;
+                                    font-size: 1rem;
+                                    font-weight: 600;
+                                }
+                           }
+                    
+                        }
+                      
+                        &:nth-child(4){
+                            border-bottom: 1px solid $white-color-2;
+                        }
+                        &:nth-child(5){
+                            border-bottom: 1px solid $white-color-2;
+                        }
+                        &:nth-child(6){
+                            border-bottom: 1px solid $white-color-2;
+                        }
+                        &:nth-child(7){
+                            border-bottom: 1px solid $white-color-2;
+                        }
+                        &:nth-child(8){
+                            border-bottom: 1px solid $white-color-2;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
 
     &-include{
         width: 100%;
@@ -108,28 +202,35 @@
     }
 
     &-sell{
-        background-color: grey;
+        background-image:
+        linear-gradient(to bottom, #131a18ad, rgba(0, 0, 0, 0.698)),
+         url(../../img/inter.jpg);
+         background-position: center;
+         background-position-x: 10%;
+         background-position-y: 30%;
+       
+
         @include centerAll;
         width: 100%;
         padding: 8rem 0;
         &-content{
             width: 80%;
             display: grid;
-            grid-template-columns:repeat(2,1fr);
+            grid-template-columns:repeat(3,1fr);
             
             @media(max-width:768px){
-                grid-template-columns:0px 1fr;
+                grid-template-columns:0px 0px 1fr;
             }
         }
 
         &-card{
             @include centerAll;
             text-align: center;
-            grid-column-start: 2;
+            grid-column-start: 3;
 
             &-content{
                 padding: 3rem 0;
-                width: 55%;
+                width: 65%;
                 background-color: #222932;
                 color: #fff;
 
@@ -180,6 +281,8 @@
             padding-right: 2rem;
             .client-img{
                 width: 12rem;
+                border-radius: 50%;
+                height: 11.5rem;
             }
 
             .quote{

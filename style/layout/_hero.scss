@@ -1,8 +1,9 @@
 @import url(../modules/_utility.scss);
 .hero{
     &-section{
-        
-        background-image: url(../../img/__image.jpg);
+        background-image:
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.472), rgba(0, 0, 0, 0.596)),
+     url(../../img/hero.jpg);
         background-position: center;
         background-position-x: 50%;
         background-position-y: 50%;

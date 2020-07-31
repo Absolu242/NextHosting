@@ -15,8 +15,12 @@
         width:70%;
        display: flex;
        justify-content: space-between;
-       align-items: center;
         color: $white-color-2;
+
+        @media(max-width: 768px){
+           width: 100%;
+            padding: 0;
+        }
     }
 
     &-left{
@@ -24,29 +28,61 @@
             width:8rem;
             height: 3rem;
         }
+
+        @media(max-width: 768px){
+            padding: 1.5rem 1rem;
+        }
     }
 
     &-right{
+
+        #check{
+            display: none;
+
+            &:checked~ .nav-list {
+                display: block;
+            }
+        }
         .menu{
             display: none;
             font-size: 2rem;
+            color: $green-color;
             @media(max-width: 768px){
                 display: block;
             }
         }
 
+        @media(max-width: 768px){
+            padding: 2rem 3rem;
+             position: relative;
+             background-color: $small-nav-color;
+         }
+
         .nav{
             &-list{
                 @include spaceAll;
                 list-style: none;
+                transition:  2s ease-in;  
 
                 @media(max-width: 768px){
+                    position: relative;
                     display: none;
+                    text-align: center;
+                    width: 100%;
+                    
                 }
             }
 
             &-item{
                 padding-left:3rem;
+
+                
+                @media(max-width: 768px){
+                   padding: 1rem 0;
+                   font-size: 1.5rem;
+                    text-align: center;
+                }
+
                 a{
                     text-decoration: none;
                     color:$green-color;
@@ -65,6 +101,24 @@
                     }
                     font-size: 1rem;
                     font-weight: bold;
+                }
+
+                
+                @media(max-width: 768px){
+                    a{
+                        color:#fff;
+                    }
+                    button{
+                        color: #fff;
+                    }
+                    span{
+                        i{
+                           color:$green-color;
+                           
+                        }
+                       
+                    }
+                    
                 }
                
             }

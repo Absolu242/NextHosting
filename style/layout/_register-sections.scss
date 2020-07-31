@@ -4,7 +4,12 @@
     width: 100%;
     &-banner{
         @include centerAll;
-        background-color: $black-color-2;
+        background-image: url("../../img/banner.png");
+        background-position: center;
+        background-position-x: 50%;
+        background-position-y: 50%;
+        background-size: cover;
+        background-repeat: no-repeat;
         padding: 4rem 0;
 
         &-content{
@@ -84,6 +89,7 @@
                 input{
                     padding:.8rem .4rem;
                     margin-left: 0rem ;
+                    outline-color: $green-color;
                 }
                 label{
                     font-size: .8rem;
@@ -99,6 +105,7 @@
                  font-weight: 600;
                 background-color: white;
                 outline-color:$green-color;
+                
             }
            
             

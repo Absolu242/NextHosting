@@ -4,7 +4,12 @@
     width: 100%;
     &-banner{
         @include centerAll;
-        background-color: $black-color-2;
+        background-image: url("../../img/banner.png");
+        background-position: center;
+        background-position-x: 50%;
+        background-position-y: 50%;
+        background-size: cover;
+        background-repeat: no-repeat;
         padding: 4rem 0;
 
         &-content{

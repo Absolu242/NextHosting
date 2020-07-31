@@ -3,7 +3,12 @@
 .domain{
     &-banner{
         @include centerAll;
-        background-color: $black-color-2;
+        background-image: url("../../img/banner.png");
+        background-position: center;
+        background-position-x: 50%;
+        background-position-y: 50%;
+        background-size: cover;
+        background-repeat: no-repeat;
         padding: 4rem 0;
 
         &-content{
@@ -78,7 +83,95 @@
     }
 
 
+    &-price{
+        &-list{
+            width:100%;
+            @include centerAll;
+            padding: 3rem 0;
 
+            .info-scroll{
+                display: none;
+               padding: 2rem 1rem;
+                p{
+                    font-size: 1.5rem;
+
+                    span{
+                        color: $green-color;
+                    }
+                }
+            }
+
+            @media(max-width:768px){
+                .info-scroll{
+                    display: block;
+                }
+                display: block;
+             }
+
+            
+        }
+
+        &-table{
+            width:100%;
+            @media(max-width:768px){
+               
+                 overflow: scroll;
+             }
+            table{
+                width:100%;
+                border-collapse: collapse;
+                font-size: 1.2rem;
+
+                thead{
+                    font-size: 1.3rem;
+                    color:#fff;
+                    background-color: $green-color;
+                   
+                    th{
+                        padding: 1rem 2.5rem ;
+                    }
+                    
+                }
+
+                tbody{
+                    tr{
+                        padding: 1rem 2.5rem ;
+
+                        td{
+                            padding: 1rem 3.5rem ;
+                            padding-right: 4rem;
+
+                            &:nth-child(2){
+                                border-left: 1px solid $white-color-2;
+                            }
+                            &:nth-child(4){
+                                border-left: 1px solid $white-color-2;
+                            }
+                            &:nth-child(5){
+                                border-left: 1px solid $white-color-2;
+                            }
+                          
+
+                            
+                        }
+                        &:nth-child(1){
+                            border-bottom: 1px solid $white-color-2;
+                        }
+                        &:nth-child(3){
+                            border-bottom: 1px solid $white-color-2;
+                        }
+                        &:nth-child(5){
+                            border-bottom: 1px solid $white-color-2;
+                        }
+                        &:nth-child(6){
+                            border-bottom: 1px solid $white-color-2;
+                        }
+                        
+                    }
+                }
+            }
+        }
+    }
 
     &-addon{
         width: 100%;
@@ -116,6 +209,76 @@
                 line-height: 2rem;
                 color: $most-text;
                
+            }
+        }
+    }
+
+    &-faq{
+        width: 100%;
+        @include centerAll;
+        padding: 8rem 0;
+        &-content{
+            width: 90%;
+
+            @media(max-width: 768px){
+                width: 100%;
+            }
+            
+        }
+        &-top{
+            padding: 3rem 0;
+        }
+        &-items{
+            width:35rem;
+            padding: 5rem 0;
+        }
+        &-item{
+            border: 1px solid $black-color-2;
+            padding: 1rem;
+
+            &:target .answer{
+                max-height: 20rem;
+            }
+
+            &:target .domain-faq-link .add{
+               display: none;
+            }
+
+            &:target .domain-faq-link .remove{
+                display: block;
+             }
+
+            
+        }
+
+        &-link{
+            display: flex;
+            justify-content: space-between;
+            align-items: center ;
+            padding: 1rem 0;
+            font-size: 1.6rem;
+
+            ion-icon{
+                padding: .5rem;
+            }
+
+            .remove{
+                display: none;
+            }
+        }
+
+        .answer{
+            max-height: 0;
+            overflow: hidden;
+        }
+
+        &-buttons{
+            span{
+                padding-right: 1rem;
+
+                .btn{
+                    padding: 1.5rem 1.5rem;
+                }
             }
         }
     }

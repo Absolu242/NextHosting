@@ -4,7 +4,12 @@
     width: 100%;
     &-banner{
         @include centerAll;
-        background-color: $black-color-2;
+        background-image: url("../../img/banner.png");
+        background-position: center;
+        background-position-x: 50%;
+        background-position-y: 50%;
+        background-size: cover;
+        background-repeat: no-repeat;
         padding: 4rem 0;
 
         &-content{
@@ -49,6 +54,76 @@
                 }
             }
         }
+    }
+
+    &-list{
+        @include centerAll;
+        width:100%;
+        padding: 5rem 0;
+        
+        &-content{
+            @include spaceAll;
+            align-items: flex-start;
+           
+        }
+    }
+
+    &-nav{
+ 
+        padding: 2rem;
+        order: 2;
+        background-color: $white-color-1;
+        border-top:5px solid $green-color;
+        text-align: text;
+        justify-content: center;
+        padding: 0 3rem;
+
+        &-list{
+           display: flex;
+           flex-direction: column;
+          text-align: left;
+         justify-content: left;
+
+         label{
+             font-size: 1.2rem;
+             border-bottom: 1px solid $most-text;
+             padding: 1rem 0;
+
+             &:last-child{
+                border:none;
+
+             }
+
+             &:hover{
+                 color:$green-color;
+             }
+         }
+        }
+    }
+
+    &-questions{
+        order:1;
+        padding-right: 12.5rem;
+        
+    }
+
+    &-question{
+      padding: 1.5rem 0;
+       &-content{
+        display: flex;
+        align-items: flex-start;
+        .number{
+            font-size: 1.5rem;
+            font-weight: 600;
+            padding-right: 2.5rem;
+        }
+        h3{
+            padding-bottom: 1rem;
+        }
+        p{
+            width: 60rem;
+        }
+       }
     }
 
     &-bottom{
