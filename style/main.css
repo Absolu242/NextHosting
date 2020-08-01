@@ -1,8 +1,4 @@
-@import url(../modules/_utility.scss);
-@import url(../modules/_utility.scss);
-@import url(../modules/_utility.scss);
-@import url(../modules/_utility.scss);
-@import url(../modules/_utility.scss);
+
 h1 {
   font-size: 2.5rem;
 }
@@ -3072,6 +3068,18 @@ button {
   }
 }
 
+@media (max-width: 768px) {
+  .faq-list-content {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 80%;
+  }
+}
+
 .faq-nav {
   padding: 2rem;
   -webkit-box-ordinal-group: 3;
@@ -3084,6 +3092,14 @@ button {
       -ms-flex-pack: center;
           justify-content: center;
   padding: 0 3rem;
+}
+
+@media (max-width: 768px) {
+  .faq-nav {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
 }
 
 .faq-nav-list {
@@ -3121,6 +3137,15 @@ button {
   padding-right: 12.5rem;
 }
 
+@media (max-width: 768px) {
+  .faq-questions {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    padding-right: 0;
+  }
+}
+
 .faq-question {
   padding: 1.5rem 0;
 }
@@ -3146,6 +3171,15 @@ button {
 
 .faq-question-content p {
   width: 60rem;
+}
+
+@media (max-width: 768px) {
+  .faq-question-content h3 {
+    width: 100%;
+  }
+  .faq-question-content p {
+    width: 100%;
+  }
 }
 
 .faq-bottom {
@@ -4257,14 +4291,8 @@ button {
 }
 
 .footer-item p {
-  width: 30rem;
+  width: 80%;
   padding: .5rem 0;
-}
-
-@media (max-width: 768px) {
-  .footer-item p {
-    width: 100%;
-  }
 }
 
 .footer-item .ct-item {
