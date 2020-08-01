@@ -329,8 +329,6 @@ button {
       -ms-flex-align: center;
           align-items: center;
   list-style: none;
-  -webkit-transition: 2s ease-in;
-  transition: 2s ease-in;
 }
 
 @media (max-width: 768px) {
@@ -405,11 +403,9 @@ button {
 }
 
 .hero-section {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.472)), to(rgba(0, 0, 0, 0.596))), url(../../img/hero.jpg);
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.472), rgba(0, 0, 0, 0.596)), url(../../img/hero.jpg);
   background-position: center;
   background-position-x: 50%;
-  background-position-y: 50%;
+  background-position-y: 30%;
   background-size: cover;
   background-repeat: no-repeat;
   display: -webkit-box;
@@ -1358,8 +1354,8 @@ button {
   display: grid;
   -ms-grid-columns: (1fr)[2];
       grid-template-columns: repeat(2, 1fr);
-  -ms-grid-rows: 350px;
-      grid-template-rows: 350px;
+  -ms-grid-rows: 300px;
+      grid-template-rows: 300px;
   color: #fff;
 }
 
@@ -1411,8 +1407,6 @@ button {
 
 .inter-text .item-left {
   position: relative;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#131a18ad), to(rgba(0, 0, 0, 0.698))), url(../../img/inter1.jpg);
-  background-image: linear-gradient(to bottom, #131a18ad, rgba(0, 0, 0, 0.698)), url(../../img/inter1.jpg);
   background-position: center;
   background-position-x: 50%;
   background-position-y: 50%;
@@ -1432,8 +1426,6 @@ button {
 }
 
 .inter-text .item-right {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#14141493), to(rgba(0, 0, 0, 0.733))), url(../../img/inter2.jpg);
-  background-image: linear-gradient(to bottom, #14141493, rgba(0, 0, 0, 0.733)), url(../../img/inter2.jpg);
   background-position: center;
   background-position-x: 50%;
   background-position-y: 50%;
@@ -1716,7 +1708,6 @@ button {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-image: url("../../img/banner.png");
   background-position: center;
   background-position-x: 50%;
   background-position-y: 50%;
@@ -1993,8 +1984,6 @@ button {
 }
 
 .hosting-sell {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#131a18ad), to(rgba(0, 0, 0, 0.698))), url(../../img/inter.jpg);
-  background-image: linear-gradient(to bottom, #131a18ad, rgba(0, 0, 0, 0.698)), url(../../img/inter.jpg);
   background-position: center;
   background-position-x: 10%;
   background-position-y: 30%;
@@ -2165,7 +2154,6 @@ button {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-image: url("../../img/banner.png");
   background-position: center;
   background-position-x: 50%;
   background-position-y: 50%;
@@ -2541,7 +2529,6 @@ button {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-image: url("../../img/banner.png");
   background-position: center;
   background-position-x: 50%;
   background-position-y: 50%;
@@ -3262,7 +3249,6 @@ button {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-image: url("../../img/banner.png");
   background-position: center;
   background-position-x: 50%;
   background-position-y: 50%;
@@ -3879,7 +3865,6 @@ button {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-image: url("../../img/banner.png");
   background-position: center;
   background-position-x: 50%;
   background-position-y: 50%;
@@ -4018,7 +4003,6 @@ button {
 
 .contact-form-info {
   padding: 2rem;
-  background-image: url(../../img/shadow.png);
   background-position: center;
   background-size: cover;
   width: 35rem;
@@ -4031,7 +4015,6 @@ button {
 }
 
 .contact-bottom {
-  background-image: url("../../img/Map.png");
   background-position: center;
   background-size: cover;
   width: 100%;
