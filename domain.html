@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
@@ -14,19 +15,19 @@
 
     <link rel="stylesheet" href="style/main.css">
     <title>Domain</title>
-  </head>
-  <body>
+</head>
+
+<body>
     <div class="body-content">
         <div class="navbar">
             <div class="navbar-small">
-              <div class="small-content">
-                <div class="small-left">
-                  <span><p> <i class="fas fa-mobile    "></i> (888)788-0846</p></span>
-                  <span><p> <i class="fas fa-envelope-open    "></i> sales@neawebservices.com</p></span>
-                </div>
-                <div class="small-right">
-                  <span class="login"
-                    ><a href="./login.html"><i class="fas fa-user "></i> LOGIN</a></span
+                <div class="small-content">
+                    <div class="small-left">
+                        <span><p> <i class="fas fa-mobile    "></i> (888)788-0846</p></span>
+                        <span><p> <i class="fas fa-envelope-open    "></i> sales@neawebservices.com</p></span>
+                    </div>
+                    <div class="small-right">
+                        <span class="login"><a href="./login.html"><i class="fas fa-user "></i> LOGIN</a></span
                   >
                   <span class="language">
                     <select name="language" >
@@ -34,391 +35,337 @@
                       <option value="french">FRENCH</option>
                     </select>
                   </span>
-                  <span class="social-media">
+                        <span class="social-media">
                     <a href="#"><i class="fab fa-facebook-f    "></i></a>
                     <a href="#"><i class="fab fa-twitter    "></i></a>
                     <a href="#"><i class="fab fa-google-plus-g    "></i></a>
                   </span>
+                    </div>
                 </div>
-              </div>
             </div>
-    
+
             <div class="navbar-big">
-              <div class="big-content">
-                <div class="big-left logo">
-                  <a href="index.html"> <img src="./img/logo.png" alt="logo" /></a>
-                </div>
-    
-                <div class="big-right">
-                   <input  type="checkbox" id="check">
-                  <label for="check" class="menu"> <i class="fas fa-bars    "></i></label>
-                  <ul class="nav-list">
-                    <li class="nav-item"><a href="./index.html">HOME</a></li>
-                    <li class="nav-item"><a href="./dedicated_hosting.html">HOSTING</a></li>
-                    <li class="nav-item"><a href="./domain.html">DOMAINS</a></li>
-                    <li class="nav-item"><a href="./404.html">PAGES</a></li>
-                    <li class="nav-item"><a href="./about_us.html">ABOUT US</a></li>
-                    <li class="nav-item"><a href="./contact.html">CONTACT</a></li>
-                    <li class="nav-item">
-                      <button class="nav-btn">
+                <div class="big-content">
+                    <div class="big-left logo">
+                        <a href="index.html"> <img src="./img/logo.png" alt="logo" /></a>
+                    </div>
+                    <input type="checkbox" id="check">
+                    <label for="check" class="menu"> <i class="fas fa-bars    "></i></label>
+
+                    <div class="big-right">
+                        <ul class="nav-list">
+                            <li class="nav-item"><a href="./index.html">HOME</a></li>
+                            <li class="nav-item"><a href="./dedicated_hosting.html">HOSTING</a></li>
+                            <li class="nav-item"><a href="./domain.html">DOMAINS</a></li>
+                            <li class="nav-item"><a href="./404.html">PAGES</a></li>
+                            <li class="nav-item"><a href="./about_us.html">ABOUT US</a></li>
+                            <li class="nav-item"><a href="./contact.html">CONTACT</a></li>
+                            <li class="nav-item">
+                                <button class="nav-btn">
                         <span
                           ><p><i class="fas fa-comment-alt    "></i> LIVE CHAT</p></span
                         >
                       </button>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-    
-          </div>
-        </div>
-        <section class="domain">
-            <div class="domain-banner" style=" background-image: url('./img/banner.png')">
-                <div class="domain-banner-content">
-                    <p>FIND YOUR</p><br>
-                    <h1>DOMAINS</h1>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
 
-            <div class="domain-search" id='search'>
-                <div class="domain-search-content">
-                    <h2>Search your Domain</h2>
-                    <form action="" class="form">
-                        <div class="search-input">
-                            <input type="text" name="input" placeholder="Search your domain">
-                        </div>
-                        <div class="search-selection">
-                            <select name="domain">
+        </div>
+    </div>
+    <section class="domain">
+        <div class="domain-banner" style=" background-image: url('./img/banner.png')">
+            <div class="domain-banner-content">
+                <p>FIND YOUR</p><br>
+                <h1>DOMAINS</h1>
+            </div>
+        </div>
+
+        <div class="domain-search" id='search'>
+            <div class="domain-search-content">
+                <h2>Search your Domain</h2>
+                <form action="" class="form">
+                    <div class="search-input">
+                        <input type="text" name="input" placeholder="Search your domain">
+                    </div>
+                    <div class="search-selection">
+                        <select name="domain">
                                 <option value=".com">.com</option>
                                 <option value=".net">.net</option>
                                 <option value=".io">.io</option>
                                 <option value=".tech">.tech</option>
                                 <option value=".xyz">.xyz</option>
                             </select>
-                        </div>
+                    </div>
 
-                        <div class="search-submit">
-                            <button type="submit" class="btn">
+                    <div class="search-submit">
+                        <button type="submit" class="btn">
                                SEARCH
                             </button>
-                        </div>
-                    </form>
-                    <div class="price-first">
-                        <ul class="price-list">
-                            <li class="price-item">.COM $5.65</li>
-                            <li class="price-item">.NET $8.35</li>
-                            <li class="price-item">.ORG $6.60</li>
-                            <li class="price-item">.US $4.99</li>
-                            <li class="price-item">.BIZ $9.99</li>
-                        </ul>
                     </div>
+                </form>
+                <div class="price-first">
+                    <ul class="price-list">
+                        <li class="price-item">.COM $5.65</li>
+                        <li class="price-item">.NET $8.35</li>
+                        <li class="price-item">.ORG $6.60</li>
+                        <li class="price-item">.US $4.99</li>
+                        <li class="price-item">.BIZ $9.99</li>
+                    </ul>
                 </div>
             </div>
-            
-            <div class="domain-price-list">
-                <div class="domain-price-list-content">
-                    <div class="domain-price-top">
-                        <h2>Domain Price List</h2>
-                    </div>
-                    <div class="domain-price-content">
-                      <div class="domain-price-table">
+        </div>
+
+        <div class="domain-price-list">
+            <div class="domain-price-list-content">
+                <div class="domain-price-top">
+                    <h2>Domain Price List</h2>
+                </div>
+                <div class="domain-price-content">
+                    <div class="domain-price-table">
                         <table>
-                          <thead>
-                            <tr>
-                              <th>DOMAIN</th>
-                              <th>1 YEAR</th>
-                              <th>2 YEAR</th>
-                              <th>RENEW</th>
-                              <th>TRANSFER</th>
-                              <th>REDEMPTION</th>
-                            </tr>
-                          </thead>
-                          <tbody>
-                            <tr>
-                              <td>.COM</td>
-                              <td>$9.95</td>
-                              <td>$9.95</td>
-                              <td>$9.95</td>
-                              <td>$9.95</td>
-                              <td>90 Days</td>
-                            </tr>
-                            <tr>
-                              <td>.NET</td>
-                              <td>$6.66</td>
-                              <td>$6.66</td>
-                              <td>$6.66</td>
-                              <td>$6.66</td>
-                              <td>90 Days</td>
-                            </tr>
-                            <tr>
-                              <td>.CO.UK</td>
-                              <td>$5.88</td>
-                              <td>$5.88</td>
-                              <td>$5.88</td>
-                              <td>$5.88</td>
-                              <td>90 Days</td>
-                            </tr>
-                            <tr>
-                              <td>.EMAIL</td>
-                              <td>$12.00</td>
-                              <td>$12.00</td>
-                              <td>$12.00</td>
-                              <td>$12.00</td>
-                              <td>90 Days</td>
-                            </tr>
-                            <tr>
-                              <td>.TODAY</td>
-                              <td>$7.65</td>
-                              <td>$7.65</td>
-                              <td>$7.65</td>
-                              <td>$7.65</td>
-                              <td>90 Days</td>
-                            </tr>
-                            <tr>
-                              <td>.ROCKS</td>
-                              <td>$6.66</td>
-                              <td>$6.66</td>
-                              <td>$6.66</td>
-                              <td>$6.66</td>
-                              <td>90 Days</td>
-                            </tr>
-                            <tr>
-                              <td>.AERO</td>
-                              <td>$5.88</td>
-                              <td>$5.88</td>
-                              <td>$5.88</td>
-                              <td>$5.88</td>
-                              <td>90 Days</td>
-                            </tr>
-                          </tbody>
+                            <thead>
+                                <tr>
+                                    <th>DOMAIN</th>
+                                    <th>1 YEAR</th>
+                                    <th>2 YEAR</th>
+                                    <th>RENEW</th>
+                                    <th>TRANSFER</th>
+                                    <th>REDEMPTION</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>.COM</td>
+                                    <td>$9.95</td>
+                                    <td>$9.95</td>
+                                    <td>$9.95</td>
+                                    <td>$9.95</td>
+                                    <td>90 Days</td>
+                                </tr>
+                                <tr>
+                                    <td>.NET</td>
+                                    <td>$6.66</td>
+                                    <td>$6.66</td>
+                                    <td>$6.66</td>
+                                    <td>$6.66</td>
+                                    <td>90 Days</td>
+                                </tr>
+                                <tr>
+                                    <td>.CO.UK</td>
+                                    <td>$5.88</td>
+                                    <td>$5.88</td>
+                                    <td>$5.88</td>
+                                    <td>$5.88</td>
+                                    <td>90 Days</td>
+                                </tr>
+                                <tr>
+                                    <td>.EMAIL</td>
+                                    <td>$12.00</td>
+                                    <td>$12.00</td>
+                                    <td>$12.00</td>
+                                    <td>$12.00</td>
+                                    <td>90 Days</td>
+                                </tr>
+                                <tr>
+                                    <td>.TODAY</td>
+                                    <td>$7.65</td>
+                                    <td>$7.65</td>
+                                    <td>$7.65</td>
+                                    <td>$7.65</td>
+                                    <td>90 Days</td>
+                                </tr>
+                                <tr>
+                                    <td>.ROCKS</td>
+                                    <td>$6.66</td>
+                                    <td>$6.66</td>
+                                    <td>$6.66</td>
+                                    <td>$6.66</td>
+                                    <td>90 Days</td>
+                                </tr>
+                                <tr>
+                                    <td>.AERO</td>
+                                    <td>$5.88</td>
+                                    <td>$5.88</td>
+                                    <td>$5.88</td>
+                                    <td>$5.88</td>
+                                    <td>90 Days</td>
+                                </tr>
+                            </tbody>
                         </table>
-                      </div>
                     </div>
-                    <div class='info-scroll'>
-                      <p>Please Scroll from <span>Left</span> to <span>Right</span> </p>
+                </div>
+                <div class='info-scroll'>
+                    <p>Please Scroll from <span>Left</span> to <span>Right</span> </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="domain-addon">
+            <div class="domain-addon-content">
+                <div class="domain-addon-top">
+                    <h2>Free add-ons <br> with every domain name</h2>
+                </div>
+
+                <div class="domain-addon-body">
+                    <div class="domain-addon-item">
+                        <span class="addon-image"><img src="./img/icon_freeemailaccount.png" alt=""></span>
+                        <span class="addon-title"> <h3>Free Email Account</h3></span>
+                        <span class="addon-text"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore officiis dolorum esse aliquid.</p></span>
+                    </div>
+
+                    <div class="domain-addon-item">
+                        <span class="addon-image"><img src="./img/icon_domainforwarding.png" alt=""></span>
+                        <span class="addon-title"> <h3>Domain Forwarding</h3></span>
+                        <span class="addon-text"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore officiis dolorum esse aliquid.</p></span>
+                    </div>
+
+                    <div class="domain-addon-item">
+                        <span class="addon-image"><img src="./img/icon_mailfwd.png" alt=""></span>
+                        <span class="addon-title"> <h3>Free Email Forwards</h3></span>
+                        <span class="addon-text"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore officiis dolorum esse aliquid.</p></span>
+                    </div>
+
+                    <div class="domain-addon-item">
+                        <span class="addon-image"><img src="./img/Dnsmanagement.png" alt=""></span>
+                        <span class="addon-title"> <h3>DNS Management</h3></span>
+                        <span class="addon-text"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore officiis dolorum esse aliquid.</p></span>
+                    </div>
+
+                    <div class="domain-addon-item">
+                        <span class="addon-image"><img src="./img/icon_controlpanal.png" alt=""></span>
+                        <span class="addon-title"> <h3>Easy to use Control Panel</h3></span>
+                        <span class="addon-text"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore officiis dolorum esse aliquid.</p></span>
+                    </div>
+
+                    <div class="domain-addon-item">
+                        <span class="addon-image"><img src="./img/icon_bulktool.png" alt=""></span>
+                        <span class="addon-title"> <h3>Bulk Tools</h3></span>
+                        <span class="addon-text"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore officiis dolorum esse aliquid.</p></span>
                     </div>
                 </div>
             </div>
+        </div>
 
-            <div class="domain-addon">
-                <div class="domain-addon-content">
-                    <div class="domain-addon-top">
-                        <h2>Free add-ons <br> with every domain name</h2>
-                    </div>
-
-                    <div class="domain-addon-body">
-                        <div class="domain-addon-item">
-                            <span class="addon-image"><img src="./img/icon_freeemailaccount.png" alt=""></span>
-                           <span class="addon-title"> <h3>Free Email Account</h3></span>
-                           <span class="addon-text"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore officiis dolorum esse aliquid.</p></span>
-                        </div>
-
-                        <div class="domain-addon-item">
-                            <span class="addon-image"><img src="./img/icon_domainforwarding.png" alt=""></span>
-                           <span class="addon-title"> <h3>Domain Forwarding</h3></span>
-                           <span class="addon-text"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore officiis dolorum esse aliquid.</p></span>
-                        </div>
-
-                        <div class="domain-addon-item">
-                            <span class="addon-image"><img src="./img/icon_mailfwd.png" alt=""></span>
-                           <span class="addon-title"> <h3>Free Email Forwards</h3></span>
-                           <span class="addon-text"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore officiis dolorum esse aliquid.</p></span>
-                        </div>
-
-                        <div class="domain-addon-item">
-                            <span class="addon-image"><img src="./img/Dnsmanagement.png" alt=""></span>
-                           <span class="addon-title"> <h3>DNS Management</h3></span>
-                           <span class="addon-text"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore officiis dolorum esse aliquid.</p></span>
-                        </div>
-
-                        <div class="domain-addon-item">
-                            <span class="addon-image"><img src="./img/icon_controlpanal.png" alt=""></span>
-                           <span class="addon-title"> <h3>Easy to use Control Panel</h3></span>
-                           <span class="addon-text"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore officiis dolorum esse aliquid.</p></span>
-                        </div>
-
-                        <div class="domain-addon-item">
-                            <span class="addon-image"><img src="./img/icon_bulktool.png" alt=""></span>
-                           <span class="addon-title"> <h3>Bulk Tools</h3></span>
-                           <span class="addon-text"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore officiis dolorum esse aliquid.</p></span>
-                        </div>
-                    </div>
+        <div class="domain-faq">
+            <div class="domain-faq-content">
+                <div class="domain-faq-top">
+                    <h2>Frequently <br> Asked Questions</h2>
                 </div>
-            </div>
-
-            <div class="domain-faq">
-                <div class="domain-faq-content">
-                    <div class="domain-faq-top">
-                       <h2>Frequently <br> Asked Questions</h2>
-                    </div>
-
-                    <div class="domain-faq-items">
-                        <div class="domain-faq-item"  id="question1">
-                           <a class="domain-faq-link" href="#question1">
-                             Question 1
-
-                             <ion-icon class='add' name="add-outline"> </ion-icon>
-                             <ion-icon class='remove' name="close-outline"></ion-icon>
-                           </a>
-                           <div class="answer">
-                             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae sequi aut magnam dolore, quia porro consequuntur deserunt nemo id aliquam!
-                           </div>
-                        </div>
 
 
-                        <div class="domain-faq-item"  id="question2">
-                          <a class="domain-faq-link" href="#question2">
-                            Question 2
-
-                            <ion-icon class='add' name="add-outline"> </ion-icon>
-                            <ion-icon class='remove' name="close-outline"></ion-icon>
-                          </a>
-                          <div class="answer">
-                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae sequi aut magnam dolore, quia porro consequuntur deserunt nemo id aliquam!
-                          </div>
-                       </div>
-
-
-                       <div class="domain-faq-item"  id="question3">
-                        <a class="domain-faq-link" href="#question3">
-                          Question 3
-
-                          <ion-icon class='add' name="add-outline"></ion-icon>
-                          <ion-icon class='remove' name="close-outline"></ion-icon>
-                        </a>
-                        <div class="answer">
-                          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae sequi aut magnam dolore, quia porro consequuntur deserunt nemo id aliquam!
-                        </div>
-                     </div>
-
-
-
-                     <div class="domain-faq-item"  id="question4">
-                      <a class="domain-faq-link" href="#question4">
-                        Question 4
-
-                        <ion-icon class='add' name="add-outline"></ion-icon>
-                        <ion-icon class='remove' name="close-outline"></ion-icon>
-                      </a>
-                      <div class="answer">
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae sequi aut magnam dolore, quia porro consequuntur deserunt nemo id aliquam!
-                      </div>
-                   </div>
-
-                    </div>
-
-                    <div class="domain-faq-buttons">
-                        <span>
+                <div class="domain-faq-buttons">
+                    <span>
                             <button class="panel-btn"><a href="./faq.html">VIEW FULL FAQ</a></button>
                         </span>
-                        <span>
+                    <span>
                             <button class="btn"><a href="#search">SEARCH YOUR DOMAIN</a></button>
                         </span>
-                    </div>
-                   
                 </div>
+
             </div>
-        </section>
-        <footer class="footer">
-          <div class="footer-content">
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="footer-content">
             <div class="footer-top">
-              <div class="footer-item">
-                <h3>SITEMAP</h3>
-                <div class="sitemap">
-                  <ul class="sitemap-list">
-                    <li class="sitemap-item"><a href="#">Home</a></li>
-                    <li class="sitemap-item"><a href="./dedicated_hosting.html">Hosting</a></li>
-                    <li class="sitemap-item"><a href="./domain.html">Domains</a></li>
-                    <li class="sitemap-item"><a href="#">Blog</a></li>
-                    <li class="sitemap-item"><a href="./contact.html">Contact</a></li>
-                  </ul>
-      
-                  <ul class="sitemap-list">
-                    <li class="sitemap-item"><a href="./dedicated_hosting.html">Dedicated Hosting</a></li>
-                    <li class="sitemap-item"><a href="#">Shared Hosting</a></li>
-                    <li class="sitemap-item"><a href="#">VPS Hostin</a></li>
-                    <li class="sitemap-item"><a href="#">Cloud Hosting</a></li>
-                    <li class="sitemap-item"><a href="#">Wordpress Hosting</a></li>
-                  </ul>
-                </div>
-      
-                <button class="chat-btn">
+                <div class="footer-item">
+                    <h3>SITEMAP</h3>
+                    <div class="sitemap">
+                        <ul class="sitemap-list">
+                            <li class="sitemap-item"><a href="#">Home</a></li>
+                            <li class="sitemap-item"><a href="./dedicated_hosting.html">Hosting</a></li>
+                            <li class="sitemap-item"><a href="./domain.html">Domains</a></li>
+                            <li class="sitemap-item"><a href="#">Blog</a></li>
+                            <li class="sitemap-item"><a href="./contact.html">Contact</a></li>
+                        </ul>
+
+                        <ul class="sitemap-list">
+                            <li class="sitemap-item"><a href="./dedicated_hosting.html">Dedicated Hosting</a></li>
+                            <li class="sitemap-item"><a href="#">Shared Hosting</a></li>
+                            <li class="sitemap-item"><a href="#">VPS Hostin</a></li>
+                            <li class="sitemap-item"><a href="#">Cloud Hosting</a></li>
+                            <li class="sitemap-item"><a href="#">Wordpress Hosting</a></li>
+                        </ul>
+                    </div>
+
+                    <button class="chat-btn">
                   <span><i class="fas fa-comment-alt    "></i> LIVE CHAT</span>
                 </button>
-      
-              </div>
-              <div class="footer-item ">
-                <h3>ABOUT NEXT HOSTING</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae eum natus unde debitis deleniti aperiam
-                  obcaecati, ad nisi. In, illum?</p>
-      
-                <span class="ct-item">
+
+                </div>
+                <div class="footer-item ">
+                    <h3>ABOUT NEXT HOSTING</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae eum natus unde debitis deleniti aperiam obcaecati, ad nisi. In, illum?</p>
+
+                    <span class="ct-item">
                   <i class="fas fa-comment-alt    "></i>
                   <p><span>CALL US</span> <br> 000 000 000</p>
-                </span>
-      
-                <span class="ct-item">
+                    </span>
+
+                    <span class="ct-item">
                   <i class="fas fa-envelope    "></i>
                   <p><span>EMAIL US</span> <br> info@nexthosting.com</p>
-                </span>
-      
-                <span class="ct-item">
+                    </span>
+
+                    <span class="ct-item">
                   <a href="#"><i class="fab fa-facebook-f    "></i></a>
                   <a href="#"><i class="fab fa-twitter    "></i></a>
                   <a href="#"><i class="fab fa-linkedin-in    "></i></a>
                   <a href="#"><i class="fab fa-google-plus   "></i></a>
                 </span>
-      
-              </div>
-              <div class="footer-item ">
-                <h3>INSTAGRAM</h3>
-                <div class="posts">
-                  <div class="post">
-                    <img src="./img/insta1.jpg" alt="post instagram">
-                  </div>
-                  <div class="post">
-                    <img src="./img/insta2.jpg" alt="post instagram">
-                  </div>
-                  <div class="post">
-                    <img src="./img/insta3.jpg" alt="post instagram">
-                  </div>
-                  <div class="post">
-                    <img src="./img/insta4.jpg" alt="post instagram">
-                  </div>
+
                 </div>
-              </div>
+                <div class="footer-item ">
+                    <h3>INSTAGRAM</h3>
+                    <div class="posts">
+                        <div class="post">
+                            <img src="./img/insta1.jpg" alt="post instagram">
+                        </div>
+                        <div class="post">
+                            <img src="./img/insta2.jpg" alt="post instagram">
+                        </div>
+                        <div class="post">
+                            <img src="./img/insta3.jpg" alt="post instagram">
+                        </div>
+                        <div class="post">
+                            <img src="./img/insta4.jpg" alt="post instagram">
+                        </div>
+                    </div>
+                </div>
             </div>
-      
+
             <div class="footer-bottom">
-              <div class="footer-bottom-content">
-                <div class="footer-item">
-                  <h3>WE ACCEPT</h3>
-                  <div class="carts">
-                    <img src="./img/paypal_icon.png" alt="paypal">
-                    <img src="./img/mestro_icon.png" alt="maestro">
-                    <img src="./img/discover_visa.png" alt="discover">
-                    <img src="./img/icon_visa.png" alt="visa">
-                  </div>
-                </div>
-      
-                <div class="footer-item">
-                  <h3>SUBSCRIBE</h3>
-                  <div class="subscribe">
-                    <input type="email" name="" placeholder="ENTER YOUR EMAIL">
-                    <button class="chat-btn">
+                <div class="footer-bottom-content">
+                    <div class="footer-item">
+                        <h3>WE ACCEPT</h3>
+                        <div class="carts">
+                            <img src="./img/paypal_icon.png" alt="paypal">
+                            <img src="./img/mestro_icon.png" alt="maestro">
+                            <img src="./img/discover_visa.png" alt="discover">
+                            <img src="./img/icon_visa.png" alt="visa">
+                        </div>
+                    </div>
+
+                    <div class="footer-item">
+                        <h3>SUBSCRIBE</h3>
+                        <div class="subscribe">
+                            <input type="email" name="" placeholder="ENTER YOUR EMAIL">
+                            <button class="chat-btn">
                       <i class="fas fa-envelope    "></i>
                     </button>
-                  </div>
+                        </div>
+                    </div>
+
+                    <div class="footer-item">
+                        <p>copyright &copy;2020 Nexthosting</p>
+                    </div>
                 </div>
-      
-                <div class="footer-item">
-                  <p>copyright &copy;2020 Nexthosting</p>
-                </div>
-              </div>
             </div>
-          </div>
-        </footer>
+        </div>
+    </footer>
     </div>
 </body>
+
 </html>
